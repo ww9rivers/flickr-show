@@ -1,0 +1,30 @@
+<messagebundle>
+  <msg name="bgcolor">背景色</msg>
+  <msg name="aqua">水蓝</msg>
+  <msg name="black">黑</msg>
+  <msg name="green">绿</msg>
+  <msg name="blue">蓝</msg>
+  <msg name="gray">灰</msg>
+  <msg name="lime">柠檬</msg>
+  <msg name="orange">橙</msg>
+  <msg name="pink">粉红</msg>
+  <msg name="purple">紫</msg>
+  <msg name="red">红</msg>
+  <msg name="transparent">透明</msg>
+  <msg name="white">白</msg>
+  <msg name="yellow">黄</msg>
+  <msg name="groupid">组号</msg>
+  <msg name="apikey">API Key</msg>
+  <msg name="tags">标签</msg>
+  <msg name="photosize">图片尺寸</msg>
+  <msg name="auto">自动选择</msg>
+  <msg name="square">方格</msg>
+  <msg name="thumbnail">微缩</msg>
+  <msg name="small">小号</msg>
+  <msg name="medium">中号</msg>
+  <msg name="original">原件</msg>
+  <msg name="refresh_seconds">刷新（秒）</msg>
+  <msg name="noimg">根据当前设置没能找到图片。</msg>
+  <msg name="nokey">没找到 Flickr API Key。</msg>
+  <msg name="stop">\n\n无法继续运行。请确认设置，然后刷新显示。</msg>
+</messagebundle>

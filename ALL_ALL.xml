@@ -1,0 +1,28 @@
+<messagebundle>
+  <msg name="bgcolor">Background Color</msg>
+  <msg name="aqua">Aqua</msg>
+  <msg name="black">Black</msg> 
+  <msg name="green">Green</msg> 
+  <msg name="blue">Blue</msg> 
+  <msg name="gray">Gray</msg> 
+  <msg name="lime">Lime</msg>
+  <msg name="orange">Orange</msg>
+  <msg name="pink">Pink</msg>
+  <msg name="purple">Purple</msg> 
+  <msg name="red">Red</msg> 
+  <msg name="transparent">Transparent</msg> 
+  <msg name="white">White</msg>
+  <msg name="yellow">Yellow</msg>
+  <msg name="groupid">Group ID</msg>
+  <msg name="apikey">API Key</msg>
+  <msg name="tags">Tags</msg>
+  <msg name="photosize">Photo Size</msg>
+  <msg name="auto">Auto</msg>
+  <msg name="square">Square</msg>
+  <msg name="thumbnail">Thumbnail</msg>
+  <msg name="small">Small</msg>
+  <msg name="medium">Medium</msg>
+  <msg name="original">Original</msg>
+  <msg name="refresh_seconds">Refresh (seconds)</msg>
+  <msg name="nokey">Flickr API Key is not configured. This gadget will stop now.\n\nPlease configure the key and reload.</msg>
+</messagebundle>
