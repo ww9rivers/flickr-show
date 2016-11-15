@@ -8,9 +8,11 @@
 	       author_link="http://www.9rivers.com/"
 	       author_photo="http://farm1.static.flickr.com/204/524366460_e86b604182.jpg"
 	       height="260" width="248">
-    <Require feature="locked-domain"/>
-    <Locale messages="http://flickr-show.googlecode.com/svn/trunk/ALL_ALL.xml"/>
-    <Locale lang="zh-cn" messages="http://flickr-show.googlecode.com/svn/trunk/zh_cn_ALL.xml"/>
+    <!-- license_link="license_en.txt" -->
+    <!-- Require feature="locked-domain" / This seems to cause "Invalid domain" error in Google Code wiki -->
+    <!-- base="https://sites.google.com/site/ahrp1998/flickr-show/" / -->
+    <Locale messages="https://sites.google.com/site/ahrp1998/flickr-show/ALL_ALL.xml"/>
+    <Locale lang="zh-cn" messages="https://sites.google.com/site/ahrp1998/flickr-show/zh_cn_ALL.xml"/>
   </ModulePrefs>
   <UserPref name="mycolor" display_name="__MSG_bgcolor__" default_value="Transparent" datatype="enum" >
     <EnumValue value="Transparent" display_value="__MSG_transparent__" />
@@ -34,6 +36,11 @@
     <EnumValue value="Medium" display_value="__MSG_medium__" />
     <EnumValue value="Original" display_value="__MSG_original__" />
   </UserPref>
+  <UserPref name="mytop" display_name="__MSG_top__" datatype="string" default_value="Auto" />
+  <UserPref name="myorder" display_name="__MSG_order__" datatype="enum" default_value="0" >
+    <EnumValue value="0" display_value="__MSG_random__" />
+    <EnumValue value="1" display_value="__MSG_order__" />
+  </UserPref>
   <UserPref name="mypace" display_name="__MSG_refresh_seconds__" datatype="enum" default_value="10" >
     <EnumValue value="10" />
     <EnumValue value="15" />
@@ -41,15 +48,23 @@
     <EnumValue value="30" />
   </UserPref>
   <Content type="html"><![CDATA[
+<head>
+<link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.17/themes/vader/jquery-ui.css"
+	type="text/css" rel="Stylesheet" />
+
 <script type="text/javascript" src="http://www.google.com/jsapi"></script>
-<script type="text/javascript" src="http://hosting.gmodules.com/ig/gadgets/file/111989964285964336299/flickr-show.js"></script>
 <script type="text/javascript">
 	google.load("jquery", "1");
-	gadgets.util.registerOnLoadHandler(c9r.flickr_show);
+	google.load("jqueryui", "1.8.17");
 </script>
-<div id="c9rFlickrShow" style="text-align: center; height: 100%; cursor: wait;"></div>
+<script type="text/javascript" src="https://sites.google.com/site/ahrp1998/flickr-show/flickr-show.js"></script>
+<script type="text/javascript">	gadgets.util.registerOnLoadHandler(c9r.flickr_show); </script>
+</head>
+<body>
+<div id="c9rFlickrShow" style="text-align: center; height: 100%; cursor: wait;">Loading . . .</div>
+</body>
+<!--
+ ALm6fM03B3qfr1jKIKHMVqLF-HAjPpC7b3bQuob8nG08q4cZh8NrqotZJ2DMbDmBJYVMMZKWL9JCyKx-OfST4hYgcAgTjVlf0DitqU-rUrYPHmME5mELDlEso9i6g-GK2BhM3dYRt4j0LaFAJq4hvBrO0FS9SCEotA==
+-->
 ]]></Content>
-  <Content>
-    <!-- ALm6fM03B3qfr1jKIKHMVqLF-HAjPpC7b3bQuob8nG08q4cZh8NrqotZJ2DMbDmBJYVMMZKWL9JCyKx-OfST4hYgcAgTjVlf0DitqU-rUrYPHmME5mELDlEso9i6g-GK2BhM3dYRt4j0LaFAJq4hvBrO0FS9SCEotA== -->
-  </Content>
 </Module>

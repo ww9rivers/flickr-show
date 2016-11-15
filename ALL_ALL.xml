@@ -23,6 +23,14 @@
   <msg name="small">Small</msg>
   <msg name="medium">Medium</msg>
   <msg name="original">Original</msg>
+  <msg name="order">Order</msg>
+  <msg name="random">Random</msg>
   <msg name="refresh_seconds">Refresh (seconds)</msg>
-  <msg name="nokey">Flickr API Key is not configured. This gadget will stop now.\n\nPlease configure the key and reload.</msg>
+  <msg name="noimg">No image found on Flickr with given configuration.</msg>
+  <msg name="nokey">Flickr API Key is not configured.</msg>
+  <msg name="stop">This gadget will stop now. Please check configuration and reload.</msg>
+  <msg name="info">Photo info</msg>
+  <msg name="next">Next Photo</msg>
+  <msg name="prev">Previous Photo</msg>
+  <msg name="top">Top Margin</msg>
 </messagebundle>
