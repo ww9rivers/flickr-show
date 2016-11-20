@@ -143,7 +143,7 @@
     flickr_json: function (uri, xf, params)
     {
 	if (params == undefined) { params = {}; }
-	var url = "http://api.flickr.com/services/rest/?format=json&nojsoncallback=1&"+uri;
+	var url = "https://api.flickr.com/services/rest/?format=json&nojsoncallback=1&"+uri;
 	if (c9r.is_gadget)
 	{
 		params[gadgets.io.RequestParameters.CONTENT_TYPE] = gadgets.io.ContentType.JSON;
@@ -179,6 +179,7 @@
 
 	if (grp) { uri += "&group_id=" + grp; }
 	uri += "&page="+c9r.page;
+	console.log('get_photo_page: uri='+uri);
 	c9r.flickr_json(uri, c9r.get_photo_size);
     },
 
@@ -316,7 +317,7 @@
 		}
 	}
 
-	// http://jquery-howto.blogspot.com/2009/02/preload-images-with-jquery.html
+	// https://jquery-howto.blogspot.com/2009/02/preload-images-with-jquery.html
 	c9r.altext = c9r.cx+":"+c9r.cp.owner+"/"+c9r.cp.id;
 	window.status = "Loading "+c9r.altext+"/"+xs.label;
 	c9r.loading = c9r.now();
@@ -439,7 +440,7 @@
 	c9r.div.fadeOut(400, "linear", function ()
 	{
 		var xp = c9r.cp;
-		// <a href='http://www.flickr.com/photos/" + xp.owner + "/" + xp.id + "/' target='_flickr' style='border:0px;'>"
+		// <a href='https://www.flickr.com/photos/" + xp.owner + "/" + xp.id + "/' target='_flickr' style='border:0px;'>"
 		c9r.div.empty().append(c9r.img);
 		c9r.div.fadeIn(400, "swing", c9r.select_photo);
 		c9r.div.find("img").css("margin-top", c9r.top);
@@ -482,7 +483,7 @@
     },
 
 
-    //	http://www.flickr.com/services/api/explore/flickr.photos.getInfo
+    //	https://www.flickr.com/services/api/explore/flickr.photos.getInfo
     show_photo_info: function (res)
     {
 	var desc, box, info;
@@ -490,7 +491,7 @@
 	try
 	{
 		info = c9r.is_gadget ? res.data.photo : res.photo;
-		desc = "<a href='http://www.flickr.com/photos/"
+		desc = "<a href='https://www.flickr.com/photos/"
 			+info.owner.nsid+"/"+info.id+"/'><h3>"
 			+(info.title._content || "Untitled")+"</h3></a>"
 			+info.description._content;
